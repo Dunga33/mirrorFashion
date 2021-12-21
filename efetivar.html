@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Efetivar</title>
+    <link rel="stylesheet" href="efeito.css">
+</head>
+<body>
+    <header class="container">
+        <h1><img src="img/logo.png" alt="Mirror Fashion"></h1>
+        <p class="sacola">
+            Nenhum item na sacola de compras
+        </p>
+        <nav class="menu-opcoes">
+            <ul>
+                <li><a href="index.html" target="_blank" > Home</a></li>
+                <li><a href="checkout.html" target="blank" >Sua Conta</a></li>
+                <li><a href="produtos.html" target="blank">Lista de Desejos</a></li>
+                <li><a href="efetivar.html" target="blank">Cartão Fidelidade</a></li>
+                <li><a href="sobre.html" target="blank">Sobre</a></li>
+                <li><a href="#">Ajuda</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <form class="efeito">
+        <label for="nome">Nome:</label>
+        <input type="text" name="nome" id="nome">
+        <input type="submit">
+        <input type="text" name="nome_usuario">
+        <input type="password" name="senha">
+        <input id="contrato" name="contrato" type="checkbox" value="sim">
+        <label for="contrato">Aceito os termos do contrato.</label>
+        <p>
+        <input type="radio" name="idade" id="idade5" value="5">
+        <label for="idade5">Menos de 5 anos</label>
+        </p>
+        <p>
+        <input type="radio" name="idade" id="idade10" value="10">
+        <label for="idade10">Menos de 10 anos</label>
+        </p>
+        <p>
+        <input type="radio" name="idade" id="idade15" value="15">
+        <label for="idade15">Menos de 15 anos</label>
+        </p>
+        <p>
+        <input type="radio" name="idade" id="idade20" value="20">
+        <label for="idade20">Menos de 20 anos</label>
+        </p>
+        <input type="button" name="mostra_dialogo" value="Clique aqui!">
+        <input type="submit" name="enviar" value="Enviar">
+        <input type="image" name="botao" src="images/enviar.png" width="20" height="18">
+        <input type="reset" name="reset" value="Limpar">
+        <input type="file" name="anexo">
+        <input type="hidden" name="codigo" value="abc012xyz789">
+        <textarea name="texto"></textarea>
+        <select multiple name="cidades">
+            <option value="bsb">Brasília</option>
+            <option value="rj">Rio de Janeiro</option>
+            <option value="sp">São Paulo</option>
+        </select>
+            
+        
+        <select name="bairro">
+            <optgroup label="Brasília">
+            <option value="asan_bsb">Asa Norte</option>
+            <option value="asas_bsb">Asa Sul</option>
+            </optgroup>
+            <optgroup label="São Paulo">
+            <option value="vlmariana_sp">Vila Mariana</option>
+            <option value="centro_sp">Centro</option>
+            </optgroup>
+            <optgroup label="Rio de Janeiro">
+            <option value="botafogo_rj">Botafogo</option>
+            <option value="centro_rj">Centro</option>
+            </optgroup>
+        </select>
+        <input type="email" name="email">
+        <input type="number" max="100" step="5">
+        <input type="url" name="endereco">
+        <input type="range" name="volume">
+        <input type="date" name="validade">
+        <input type="color" name="cor_olhos">
+        <input type="search" results="10">
+        <input type="tel" name="telefone">
+    </form>
+    <form class="dados">
+        <fieldset>
+            <legend>Dados pessoais</legend>
+            <div class="form-group">
+                <label for="nome">Nome completo</label>
+                <input type="text" class="form-control" id="nome" name="nome">
+                <input type="text" class="form-control" id="nome" name="nome" autofocus>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" name="email">
+                <input type="email" class="form-control" id="email" name="email" placeholder="email@exemplo.com">
+            </div>
+            <div class="form-group">
+                <label for="cpf">CPF</label>
+                <input type="text" class="form-control" id="cpf" name="cpf">
+                <input type="text" class="form-control" id="cpf" name="cpf" placeholder="000.000.000-00">
+            </div>
+            <div class="checkbox">
+                <label>
+                <input type="checkbox" value="sim" name="spam" checked>
+                Quero receber spam da Mirror Fashion
+                </label>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Cartão de crédito</legend>
+            
+            <div class="form-group">
+                <label for="numero-cartao">Número - CVV</label>
+                <input type="text" class="form-control" id="numero-cartao" name="numero-cartao">
+            </div>
+            <div class="form-group">
+                <label for="bandeira-cartao">Bandeira</label>
+                <select name="bandeira-cartao" id="bandeira-cartao" class="form-control">
+                <option value="master">MasterCard</option>
+                <option value="visa">VISA</option>
+                <option value="amex">American Express</option>
+                </select>
+            </div>
+                <div class="form-group">
+                <label for="validade-cartao">Validade</label>
+                <input type="month" class="form-control" id="validade-cartao" name="validade-cartao">
+            </div>
+        </fieldset>
+        <button type="submit" class="btn btn-primary">
+
+        </button>
+        <button type="submit" class="btn btn-primary">
+            <span class="glyphicon glyphicon-thumbs-up"></span>
+            Confirmar Pedido
+        </button>
+    </form>
+    <footer>
+        <div class="container">
+            <img src="img/logo.png" alt="Logo Mirror Fashion">
+            <ul class="social">
+                <li><a href="http://facebook.com/mirrorfashion" target="blank">Facebook</a></li>
+                <li><a href="http://twitter.com/mirrorfashion" target="blank">Twitter</a></li>
+                <li><a href="http://plus.google.com/mirrorfashion" target="blank">Google+</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

@@ -161,7 +161,7 @@ header {
     background-color: #dcdcf5;
     }
 footer {
-    background-image: url(../img/fundo-rodape.png);
+    background-image: url('img/fundo-rodape.png');
     clear: both;
     padding: 20px 0;
     }
